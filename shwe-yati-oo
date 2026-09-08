@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shwe Yati Oo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7ede2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            max-width: 380px;
+            width: 100%;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .img-container {
+            width: 100%;
+            height: 380px;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #2b2d42;
+            margin-bottom: 5px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: #ffe5ec;
+            color: #ff4d6d;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .info-list {
+            text-align: left;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            font-size: 14px;
+            color: #4a5568;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .label {
+            font-weight: 600;
+            color: #718096;
+        }
+
+        .quote {
+            font-size: 14px;
+            color: #555;
+            font-style: italic;
+            line-height: 1.5;
+            border-top: 1px solid #edf2f7;
+            padding-top: 15px;
+        }
+
+        .heart {
+            color: #ff4d6d;
+            display: inline-block;
+            animation: beat 1.2s infinite ease-in-out;
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="img-container">
+            <!-- ဓာတ်ပုံဖိုင်အမည်ကို ဒီနေရာမှာ ထည့်ပါ -->
+            <img src="shwe_yati_oo.jpg" alt="Shwe Yati Oo">
+        </div>
+
+        <div class="name">Shwe Yati Oo</div>
+        <div class="status-badge">Single 💖</div>
+
+        <div class="info-list">
+            <div class="info-item">
+                <span class="label">မွေးနေ့:</span>
+                <span>Dec 28, 2005</span>
+            </div>
+            <div class="info-item">
+                <span class="label">ပညာအရည်အချင်း:</span>
+                <span>G12 ရိုးရိုးအောင်</span>
+            </div>
+        </div>
+
+        <div class="quote">
+            "ချစ်စရာကောင်းတဲ့ အပြုံးလေးတွေနဲ့ ဆွဲဆောင်မှုရှိတဲ့ သူလေး <span class="heart">✨</span>"
+        </div>
+    </div>
+
+</body>
+</html>
